@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Factorial</title>
+    <link rel="stylesheet" href="/css/secu-ejercicios.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href='/'>Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href='/pages/Primaria/Primaria.html'>Primaria</a>
+                        <a href='/pages/Secundaria/Secundaria.html'>Secundaria</a>
+                        <a href='/pages/Universidad/Universidad.html'>Universidad</a>
+                    </div>
+                </li>
+                <li><a href='/pages/acerca.html'>Sobre Nosotros</a></li>
+                <li><a href='/pages/contacto.html'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Factorial de un Número</h1>
+        <p>Ingresa un número entero positivo y te mostraremos su factorial.</p>
+        <input type="number" id="numero" placeholder="Ingresa un número" min="0">
+        <button onclick="calcularFactorial()">Calcular Factorial</button>
+        <p id="resultado"></p>
+        <div class="explanation-box">
+            <h3>Explicacion del Algoritmo</h3>
+            <p>El algoritmo para calcular el factorial de un número consiste en multiplicar todos los números enteros desde 1 hasta el número dado. Utilizamos un bucle para realizar esta multiplicación repetidamente.</p>
+            <p>El factorial de un número n (denotado como n!) se define de la siguiente manera:</p>
+               <ul>
+                <li>0! = 1 (por definición)</li>
+                <li>n! = n × (n-1) × (n-2) × ... × 1 para n > 0</li>
+               </ul>
+            <p>En nuestro algoritmo:</p>
+               <ul>
+                <li>Inicializamos una variable <code>factorial</code> a 1.</li>
+                <li>Utilizamos un bucle <code>for</code> que recorre desde 1 hasta el número ingresado.</li>
+                <li>En cada iteración del bucle, multiplicamos <code>factorial</code> por el número de la iteración actual.</li>
+                <li>Finalmente, mostramos el resultado al usuario.</li>
+               </ul>
+        </div>
+    </div>
+    <a class='back-to-top-button' href='/pages/Secundaria/Secundaria.html'>Regresar a ejercicios de secundaria</a>
+    <script src="/js/factorial.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tablas</title>
+    <link rel="stylesheet" href="/css/secu-ejercicios.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href='/'>Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href='/pages/Primaria/Primaria.html'>Primaria</a>
+                        <a href='/pages/Secundaria/Secundaria.html'>Secundaria</a>
+                        <a href='/pages/Universidad/Universidad.html'>Universidad</a>
+                    </div>
+                </li>
+                <li><a href='/pages/acerca.html'>Sobre Nosotros</a></li>
+                <li><a href='/pages/contacto.html'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Generador de Tablas</h1>
+            <form id="numerosForm" onsubmit="generarSecuencia(); return false;">
+                <h2>Generador de secuencia de Fibonacci</h2>
+                <label for="numero">Ingrese un número entero positivo:</label>
+                <input type="number" id="numero" min="1" step="1">
+                <button type="submit">Generar secuencia</button>
+            </form>
+            <div id="resultado"></div>
+            <div class="explanation-box">
+                <h3>Explicacion del codigo</h3>
+                <p>Se inicia a y b como los primeros dos números de la secuencia de Fibonacci.Se utiliza un bucle for para generar los primeros cantidad números de Fibonacci, almacenándolos en el array resultado. Finalmente, se muestra el resultado en el elemento con id "resultado" usando document.getElementById('resultado').textContent.</p>
+            </div>
+        </div>
+    </main>
+    <a class='back-to-top-button' href='/pages/Secundaria/Secundaria.html'>Regresar a ejercicios de secundaria</a>
+    <script src="/js/fibonacci.js"></script>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

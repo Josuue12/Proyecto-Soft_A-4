@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Texto</title>
+    <link rel="stylesheet" href="/css/primos.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href='/'>Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href='/pages/Primaria/Primaria.html'>Primaria</a>
+                        <a href='/pages/Secundaria/Secundaria.html'>Secundaria</a>
+                        <a href='/pages/Universidad/Universidad.html'>Universidad</a>
+                    </div>
+                </li>
+                <li><a href='/pages/acerca.html'>Sobre Nosotros</a></li>
+                <li><a href='/pages/contacto.html'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Análisis de Texto</h1>
+        <label for="texto">Ingresa un párrafo:</label>
+        <textarea id="texto"></textarea>
+        <button onclick="analizarTexto()">Analizar Texto</button>
+        <div id="resultado"></div>
+        <a class='back-to-top-button' href='/pages/Universidad/Universidad.html'>Regresar a ejercicios de universidad</a>
+    </div>
+    <script src="/js/texto.js"></script>
+</body>
+</html>

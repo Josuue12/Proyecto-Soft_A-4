@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Secuencias Numéricas</title>
+    <link rel="stylesheet" href="/css/secuenciales.css">
+</head>
+<body>
+    <audio id="acierto">
+        <source src="/acierto.mp3">
+    </audio>
+    <audio id="fallo">
+        <source src="/fallo.mp3">
+    </audio>
+    <header id="inicio">
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href='/'>Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href='/pages/Primaria/Primaria.html'>Primaria</a>
+                        <a href='/pages/Secundaria/Secundaria.html'>Secundaria</a>
+                        <a href='/pages/Universidad/Universidad.html'>Universidad</a>
+                    </div>
+                </li>
+                <li><a href='/pages/acerca.html'>Sobre Nosotros</a></li>
+                <li><a href='/pages/contacto.html'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ejercicios de Secuencias Numéricas</h1>
+        <div id="exercise-container">
+            <div class="exercise" data-answer="8">
+                <p>¿Qué número sigue en la secuencia 2, 4, 6, ...?</p>
+                <div class="options">
+                    <button data-value="6" onclick="checkAnswer(this, 1)">
+                        <img src="/img/img.6.jpg" alt="6">
+                    </button>
+                    <button data-value="7" onclick="checkAnswer(this, 1)">
+                        <img src="/img/img.7.jpg" alt="7">
+                    </button>
+                    <button data-value="8" onclick="checkAnswer(this, 1)">
+                        <img src="/img/img.8.jpg" alt="8">
+                    </button>
+                    <button data-value="9" onclick="checkAnswer(this, 1)">
+                        <img src="/img/img.9.jpg" alt="9">
+                    </button>
+                </div>
+                <p id="txt_msj1" class="message"></p>
+            </div>
+            <div class="exercise" data-answer="5" style="display: none;">
+                <p>¿Cuál es el patrón en la secuencia 5, 10, 15, ...?</p>
+                <div class="options">
+                    <button data-value="4" onclick="checkAnswer(this, 2)">
+                        <img src="/img/img.4.png" alt="4">
+                    </button>
+                    <button data-value="5" onclick="checkAnswer(this, 2)">
+                        <img src="/img/img.5.png" alt="5">
+                    </button>
+                    <button data-value="6" onclick="checkAnswer(this, 2)">
+                        <img src="/img/img.6.jpg" alt="6">
+                    </button>
+                    <button data-value="7" onclick="checkAnswer(this, 2)">
+                        <img src="/img/img.7.jpg" alt="7">
+                    </button>
+                </div>
+                <p id="txt_msj2" class="message"></p>
+            </div>
+            <div class="exercise" data-answer="40" style="display: none;">
+                <p>¿Qué número sigue en la secuencia 10, 20, 30, ...?</p>
+                <div class="options">
+                    <button data-value="30" onclick="checkAnswer(this, 3)">
+                        <img src="/img/img.30.png" alt="30">
+                    </button>
+                    <button data-value="35" onclick="checkAnswer(this, 3)">
+                        <img src="/img/img.35.png" alt="35">
+                    </button>
+                    <button data-value="40" onclick="checkAnswer(this, 3)">
+                        <img src="/img/img.40.png" alt="40">
+                    </button>
+                    <button data-value="45" onclick="checkAnswer(this, 3)">
+                        <img src="/img/img.45.png" alt="45">
+                    </button>
+                </div>
+                <p id="txt_msj3" class="message"></p>
+            </div>
+            <div class="exercise" data-answer="32" style="display: none;">
+                <p>¿Cuál es el patrón en la secuencia 2, 4, 8, 16, ...?</p>
+                <div class="options">
+                    <button data-value="24" onclick="checkAnswer(this, 4)">
+                        <img src="/img/img.24.png" alt="24">
+                    </button>
+                    <button data-value="28" onclick="checkAnswer(this, 4)">
+                        <img src="/img/img.28.png" alt="28">
+                    </button>
+                    <button data-value="32" onclick="checkAnswer(this, 4)">
+                        <img src="/img/img.32.png" alt="32">
+                    </button>
+                    <button data-value="36" onclick="checkAnswer(this, 4)">
+                        <img src="/img/img.36.png" alt="36">
+                    </button>
+                </div>
+                <p id="txt_msj4" class="message"></p>
+            </div>
+        </div>
+        <div id="final-explanation" style="display: none;">
+            <h2>Explicación de las Respuestas Correctas</h2>
+            <p><strong>Ejercicio 1:</strong> La secuencia 2, 4, 6, ... sigue un patrón de sumar 2 al número anterior. Por lo tanto, el siguiente número es 8.</p>
+            <p><strong>Ejercicio 2:</strong> La secuencia 5, 10, 15, ... sigue un patrón de sumar 5 al número anterior. Por lo tanto, el siguiente número es 20, pero el patrón es sumar 5.</p>
+            <p><strong>Ejercicio 3:</strong> La secuencia 10, 20, 30, ... sigue un patrón de sumar 10 al número anterior. Por lo tanto, el siguiente número es 40.</p>
+            <p><strong>Ejercicio 4:</strong> La secuencia 2, 4, 8, 16, ... sigue un patrón de multiplicar por 2 al número anterior. Por lo tanto, el siguiente número es 32.</p>
+            <a class='back-to-top-button' href='/pages/Primaria/Primaria.html'>Regresar a ejercicios de primaria</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/js/secuenciales.js"></script>
+</body>
+</html>

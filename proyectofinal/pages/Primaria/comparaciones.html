@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Lógica de Comparaciones</title>
+    <link rel="stylesheet" href="/css/comparaiones.css">
+</head>
+<body>
+    <audio id="acierto">
+        <source src="/acierto.mp3">
+    </audio>
+    <audio id="fallo">
+        <source src="/fallo.mp3">
+    </audio>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href='/'>Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href='/pages/Primaria/Primaria.html'>Primaria</a>
+                        <a href='/pages/Secundaria/Secundaria.html'>Secundaria</a>
+                        <a href='/pages/Universidad/Universidad.html'>Universidad</a>
+                    </div>
+                </li>
+                <li><a href='/pages/acerca.html'>Sobre Nosotros</a></li>
+                <li><a href='/pages/contacto.html'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ejercicios de Lógica de Comparaciones</h1>
+        <div id="exercise-container">
+            <div class="exercise" data-answer="María" id="ejercicio1">
+                <p>¿Quién es mayor, Juan de 12 años o María de 14 años?</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'María', 1)">
+                        <img src="/img/juan.png" alt="Juan">
+                    </button>
+                    <button onclick="checkAnswer(this, 'María', 1)">
+                        <img src="/img/maria.jpg" alt="María">
+                    </button>
+                </div>
+                <p id="txt_msj1" class="message"></p>
+            </div>
+            <div class="exercise" data-answer="Laura" id="ejercicio2" style="display: none;">
+                <p>¿Quién es más joven, Pedro de 9 años o Laura de 7 años?</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, 'Laura', 2)">
+                        <img src="/img/pedro.png" alt="Pedro">
+                    </button>
+                    <button onclick="checkAnswer(this, 'Laura', 2)">
+                        <img src="/img/laura.png" alt="Laura">
+                    </button>
+                </div>
+                <p id="txt_msj2" class="message"></p>
+            </div>
+            <div class="exercise" data-answer="8" id="ejercicio3" style="display: none;">
+                <p>¿Cuál es mayor, 8 o 5?</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this, '8', 3)">
+                        <img src="/img/img.8.jpg" alt="8">
+                    </button>
+                    <button onclick="checkAnswer(this, '8', 3)">
+                        <img src="/img/img.5.png" alt="5">
+                    </button>
+                </div>
+                <p id="txt_msj3" class="message"></p>
+            </div>
+        </div>
+        <div id="final-explanation" style="display: none;">
+            <h2>Explicación de las Respuestas Correctas</h2>
+            <p><strong>Ejercicio 1:</strong> María es mayor que Juan porque tiene 14 años y Juan tiene 12 años.</p>
+            <p><strong>Ejercicio 2:</strong> Laura es más joven que Pedro porque tiene 7 años y Pedro tiene 9 años.</p>
+            <p><strong>Ejercicio 3:</strong> 8 es mayor que 5.</p>
+            <a class='back-to-top-button' href='/pages/Primaria/Primaria.html'>Regresar a la página principal</a>
+        </div>
+    </main>
+    <script src="/js/comparaciones.js"></script>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo.</p>
+    </footer>
+</body>
+</html>

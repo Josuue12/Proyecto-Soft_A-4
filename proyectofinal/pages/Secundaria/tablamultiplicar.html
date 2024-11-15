@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tablas</title>
+    <link rel="stylesheet" href="/css/secu-ejercicios.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Educativo</h1>
+        <nav>
+            <ul>
+                <li><a href='/'>Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Ejercicios por Niveles</a>
+                    <div class="dropdown-content">
+                        <a href='/pages/Primaria/Primaria.html'>Primaria</a>
+                        <a href='/pages/Secundaria/Secundaria.html'>Secundaria</a>
+                        <a href='/pages/Universidad/Universidad.html'>Universidad</a>
+                    </div>
+                </li>
+                <li><a href='/pages/acerca.html'>Sobre Nosotros</a></li>
+                <li><a href='/pages/contacto.html'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Generador de Tablas</h1>
+            <form id="numerosForm" onsubmit="generarTabla(); return false;">
+                <label for="numero">Ingrese un numero:</label><br>
+                <input type="number" id="numero" name="numero" required>
+                <label for="operacion">Operación:</label>
+                <select id="operacion" name="operacion">
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="suma">Suma</option>
+                </select>
+                <button type="submit">Generar Tabla</button>
+            </form>
+            <div id="resultado"></div>
+            <div class="explanation-box">
+                <h3>Explicacion del codigo</h3>
+                <p>Cuando el usuario ingresa un número y selecciona el tipo de operación y luego hace clic en "Generar Tabla", se ejecuta y verifica si el número ingresado es válido, Luego, crea una tabla que muestra la multiplicación o suma del número ingresado con los números del 1 al 10. Si operacion es multiplicacion, calcula numero * i y crea una fila con el formato "número x i = resultado". Si operacion es suma, calcula numero + i y crea una fila con el formato "número + i = resultado".</p>
+            </div>
+        </div>
+        <a class='back-to-top-button' href='/pages/Secundaria/Secundaria.html'>Regresar a ejercicios de secundaria</a>
+    </main>
+    <script src="/js/tabla.js"></script>
+    <footer>
+        <p>&copy; 2024 Proyecto Educativo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
